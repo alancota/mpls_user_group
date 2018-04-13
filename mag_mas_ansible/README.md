@@ -26,6 +26,7 @@ Modify Provisioning Path
 -------------------------
 Modify Directory for your local path so package dependencies are resolved
   `SOURCE_PATH='/Users/AricDay/API/apim_vagrant_ansible_files'; DESTINATION_PATH='/<YOUR_PATH>/apim_vagrant_ansible_files'; grep -rl $SOURCE_PATH provisioning/group_vars | xargs sed -i "" -e "s@$SOURCE_PATH@$DESTINATION_PATH@g"`
+  
   `grep -r $DESTINATION_PATH provisioning/group_vars`
 
 Please contact your CA representative for additional information on required license files and packages.
