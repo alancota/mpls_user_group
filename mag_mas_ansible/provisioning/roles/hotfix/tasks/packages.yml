@@ -1,0 +1,15 @@
+---
+## packages.yml
+- name: copy the Hotfix Package RPM
+  copy: src={{ item.src }} dest={{ item.dest }} owner={{ sso_packages.owner }} group={{ sso_packages.group }} mode=644
+  with_items:
+  ## These must be in this order since Ansible cannot determine local RPM dependencies
+  - "{{ hotfix_package.package }}"
+  - "{{ hotfix_package.appliance }}"
+
+- name: install the Hotfix Package RPM
+  yum: name={{item}} state=installed
+  with_items:
+  ## These must be in this order since Ansible cannot determine local RPM dependencies
+  - "{{ hotfix_package.package.dest }}"
+  - "{{ hotfix_package.appliance.dest }}"
