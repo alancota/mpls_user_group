@@ -31,6 +31,42 @@ Modify Directory for your local path so package dependencies are resolved
 
 Please contact your CA representative for additional information on required license files and packages.
 
+Required Dependencies
+-------------------------
+### provisioning/group_vars/gateway.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/SSG_Gateway_9.xml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/ssg-9.3.00-7814.noarch.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/ssg-appliance-9.3.00-7814.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/ssg-platform-1.7.00-181.noarch.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/MySQL-python-1.2.3-0.3.c1.1.el6.x86_64.rpm
+
+### provisioning/group_vars/mas_messaging.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/MAS-Messaging-4.1.00-b775.sskar
+
+### provisioning/group_vars/mosquitto.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/mosquitto-1.4.8-1.1.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/mosquitto-clients-1.4.8-1.1.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/libmosquitto1-1.4.8-1.1.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/tcp_wrappers-7.6-57.el6.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/uuid-1.6.1-10.el6.x86_64.rpm
+
+### provisioning/group_vars/otk.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/OTK_Installers_4.2.00-3367.zip
+
+### provisioning/group_vars/mobile.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/SSG_MAG_9.xml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/MAG_Installers_4.1.00-2591.zip
+
+### provisioning/group_vars/mas.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/SSG_MAS_9.xml
+
+### provisioning/group_vars/mas_storage.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/MAS-Storage-4.1.00-b439.sskar
+
+### provisioning/group_vars/mas_identity.yml
+    * /Users/AricDay/API/apim_vagrant_ansible_files/MAS-Identity-4.1.00-b595.sskar
+
+
 Quick Start
 -------------------------
 
