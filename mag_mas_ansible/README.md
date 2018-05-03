@@ -33,6 +33,20 @@ Please contact your CA representative for additional information on required lic
 
 Required Dependencies
 -------------------------
+
+### MySQL Dependencies
+    * /Users/AricDay/API/apim_vagrant_ansible_files/mysql-community-server-5.7.21-1.el6.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/mysql-community-libs-5.7.21-1.el6.x86_64.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/mysql-community-client-5.7.21-1.el6.x86_64.rpm
+
+### Java 
+    * /Users/AricDay/API/apim_vagrant_ansible_files/jdk-8u91-linux-i586.rpm
+
+### Cassandra
+    * /Users/AricDay/API/apim_vagrant_ansible_files/cassandra21-2.1.7-1.noarch.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/cassandra21-tools-2.1.7-1.noarch.rpm
+    * /Users/AricDay/API/apim_vagrant_ansible_files/dsc21-2.1.7-1.noarch.rpm
+    
 ### provisioning/group_vars/gateway.yml
     * /Users/AricDay/API/apim_vagrant_ansible_files/SSG_Gateway_9.xml
     * /Users/AricDay/API/apim_vagrant_ansible_files/ssg-9.3.00-7814.noarch.rpm
