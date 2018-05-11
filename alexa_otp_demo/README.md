@@ -109,18 +109,18 @@ MyLogoutIntent | log out | none | none
 
 
 ## Test the new skill with the following utterances
-* start voice demo *loads the AWS Lambda function*
-    * **Welcome to the CA Alexa demo**
-* hello gateway *connects to gateway without OAuth*
-    * **Hello from the gateway. Connection is valid**
-* OTP service *sends OTP challenges user to validate the PIN issued*
-    * **Pin sent. please say: pin number: then say the pin**
-* pin number {PIN} *submits the OTP recieved via Twilio*
-    * **Accepted. Please say: OTP service**
-* OTP service *checks OAuth and if PIN has been validated, then returns protected resource*
-    * **Here is the secrect resource**
-* log out *clear session and reset PIN validation*
-    * **Thank you**
+* **start voice demo**
+    * *loads the AWS Lambda function*
+* **hello gateway**
+    * *connects to gateway without OAuth*
+* **OTP service**
+    * *sends OTP challenges user to validate the PIN issued*
+* **pin number {PIN}**
+    * *submits the OTP recieved via Twilio*
+* **OTP service**
+    * *checks OAuth and if PIN has been validated, then returns protected resource*
+* **log out**
+    * *clear session and reset PIN validation*
 
 
 
