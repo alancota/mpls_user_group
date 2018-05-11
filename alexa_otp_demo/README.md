@@ -54,28 +54,41 @@ integrated with Lambda and OTP push notification using a personal Twillio Accoun
 ![OAuth image](images/clientOauth.png)
 
 ### AWS Lambda Configuration
+* Login to AWS consle https://aws.amazon.com/
 * Create a role for Lambda execution (i.e., lambda_basic_execution) with CloudWatch Logs enabled
 ![Role image](images/roleImage.png)
+
+
 
 * Create a new custom Lambda function
 ![createLambda image](images/createLambda.png)
 
+
+
 * Import Lambda function through `upload a .ZIP file` button in the FUNCTION CODE
     * [Link to zip file](lambdaExport/alexaAPIM-599148ac-b9de-4d2e-a0c6-1a8a1aff68d0.zip)
+    
 * Add the **Alexa Skills Kit** trigger to your new function in the DESIGNER tab
 ![createLambda image](images/configureFunction.png)
+
 * Add the OAuth/Gateway configuration into MagServer ENVIRONMENT VARIABLES
 ![envVar image](images/envVar.png)
+
 * Add the role created earlier in EXECUTION ROLE
 ![exRole image](images/exRole.png)
+
+
 * **SAVE FUNCTION & COPY ARN VALUE**
     * arn:aws:lambda:us-east-0:334429738445:function:alexaDemo
+
+
 
 ### Alexa Skill Configuration
 * Log in to the Alexa Console - https://developer.amazon.com/alexa/console
 * Create custom skill using skill builder
 
-#### Invocation Name:  **voice demo**
+#### Invocation Name:
+**voice demo**
 
 #### Intent, Utterance and Slot Configuration
 Intent | Utterance | Slot | Slot Type
@@ -88,4 +101,20 @@ MyLogoutIntent | log out | none | none
 
 #### Configure ARN endpoint created in Lambda
 ![ARN image](images/addARN.png)
+
+#### Enable OAuth --> ACCOUNT LINKING
+* Select ACCOUNT LINKING to configure the OAuth client created
+![linkAct image](images/linkAct.png)
+
+
+
+## Test the new skill with the following utterances
+* start voice demo **Welcome to the CA Alexa demo**
+* hello gateway  **Hello from the gateway. Connection is valid**
+* OTP service  **Pin sent. please say: pin number: then say the pin**
+* pin number {PIN} **Accepted. Please say: OTP service**
+* OTP service **Here is the secrect resource**
+* log out **Thank you**
+
+
 
