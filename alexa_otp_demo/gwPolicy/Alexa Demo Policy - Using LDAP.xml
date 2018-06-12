@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>MAG OTP Configuration</Name>
+            <Guid>ae2e93d4-1acf-4931-b01a-8f52407756d6</Guid>
+        </EncapsulatedAssertionReference>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>OTK Require OAuth 2.0 Token</Name>
+            <Guid>393bcb93-82ad-4b55-8333-1119f607a560</Guid>
+        </EncapsulatedAssertionReference>
+        <IDProviderReference RefType="com.l7tech.console.policy.exporter.IdProviderReference">
+            <GOID>8614e4a604a90f4f96796ec340bd294b</GOID>
+            <Name>APIMCA LDAP</Name>
+            <Props>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGphdmEgdmVyc2lvbj0iMS44&#xd;
+LjBfMTQ0IiBjbGFzcz0iamF2YS5iZWFucy5YTUxEZWNvZGVyIj4KIDxvYmplY3QgY2xhc3M9Imph&#xd;
+dmEudXRpbC5IYXNoTWFwIj4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+dXNlckNl&#xd;
+cnRVc2VUeXBlPC9zdHJpbmc+CiAgIDxzdHJpbmc+Tk9ORTwvc3RyaW5nPgogIDwvdm9pZD4KICA8&#xd;
+dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+cmV0dXJuaW5nQXR0cmlidXRlczwvc3RyaW5n&#xd;
+PgogICA8YXJyYXkgY2xhc3M9ImphdmEubGFuZy5TdHJpbmciIGxlbmd0aD0iMCIvPgogIDwvdm9p&#xd;
+ZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+bnRsbVByb3ZpZGVyUHJvcGVydGll&#xd;
+czwvc3RyaW5nPgogICA8b2JqZWN0IGNsYXNzPSJqYXZhLnV0aWwuVHJlZU1hcCI+CiAgICA8dm9p&#xd;
+ZCBtZXRob2Q9InB1dCI+CiAgICAgPHN0cmluZz5kb21haW4uZG5zLm5hbWU8L3N0cmluZz4KICAg&#xd;
+ICA8c3RyaW5nPjwvc3RyaW5nPgogICAgPC92b2lkPgogICAgPHZvaWQgbWV0aG9kPSJwdXQiPgog&#xd;
+ICAgIDxzdHJpbmc+ZG9tYWluLm5ldGJpb3MubmFtZTwvc3RyaW5nPgogICAgIDxzdHJpbmc+PC9z&#xd;
+dHJpbmc+CiAgICA8L3ZvaWQ+CiAgICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgICAgPHN0cmluZz5l&#xd;
+bmFibGVkPC9zdHJpbmc+CiAgICAgPHN0cmluZz5mYWxzZTwvc3RyaW5nPgogICAgPC92b2lkPgog&#xd;
+ICAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+aG9zdC5kbnMubmFtZTwvc3RyaW5n&#xd;
+PgogICAgIDxzdHJpbmc+PC9zdHJpbmc+CiAgICA8L3ZvaWQ+CiAgICA8dm9pZCBtZXRob2Q9InB1&#xd;
+dCI+CiAgICAgPHN0cmluZz5ob3N0Lm5ldGJpb3MubmFtZTwvc3RyaW5nPgogICAgIDxzdHJpbmc+&#xd;
+PC9zdHJpbmc+CiAgICA8L3ZvaWQ+CiAgICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgICAgPHN0cmlu&#xd;
+Zz5zZXJ2ZXIuZG5zLm5hbWU8L3N0cmluZz4KICAgICA8c3RyaW5nPjwvc3RyaW5nPgogICAgPC92&#xd;
+b2lkPgogICAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+c2VydmljZS5hY2NvdW50&#xd;
+PC9zdHJpbmc+CiAgICAgPHN0cmluZz48L3N0cmluZz4KICAgIDwvdm9pZD4KICAgPC9vYmplY3Q+&#xd;
+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0Ij4KICAgPHN0cmluZz5ncm91cE1lbWJlcnNo&#xd;
+aXBDYXNlSW5zZW5zaXRpdmU8L3N0cmluZz4KICAgPGJvb2xlYW4+ZmFsc2U8L2Jvb2xlYW4+CiAg&#xd;
+PC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0Ij4KICAgPHN0cmluZz51c3JtYXBwaW5nczwvc3Ry&#xd;
+aW5nPgogICA8b2JqZWN0IGNsYXNzPSJqYXZhLnV0aWwuSGFzaE1hcCI+CiAgICA8dm9pZCBtZXRo&#xd;
+b2Q9InB1dCI+CiAgICAgPHN0cmluZz5pbmV0b3JncGVyc29uPC9zdHJpbmc+CiAgICAgPG9iamVj&#xd;
+dCBjbGFzcz0iY29tLmw3dGVjaC5pZGVudGl0eS5sZGFwLlVzZXJNYXBwaW5nQ29uZmlnIj4KICAg&#xd;
+ICAgPHZvaWQgcHJvcGVydHk9ImVtYWlsTmFtZUF0dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+bWFp&#xd;
+bDwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJmaXJzdE5hbWVB&#xd;
+dHRyTmFtZSI+CiAgICAgICA8c3RyaW5nPmdpdmVuTmFtZTwvc3RyaW5nPgogICAgICA8L3ZvaWQ+&#xd;
+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJrZXJiZXJvc0F0dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+&#xd;
+Y248L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ibGFzdE5hbWVB&#xd;
+dHRyTmFtZSI+CiAgICAgICA8c3RyaW5nPnNuPC9zdHJpbmc+CiAgICAgIDwvdm9pZD4KICAgICAg&#xd;
+PHZvaWQgcHJvcGVydHk9ImxvZ2luQXR0ck5hbWUiPgogICAgICAgPHN0cmluZz5jbjwvc3RyaW5n&#xd;
+PgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJuYW1lQXR0ck5hbWUiPgogICAg&#xd;
+ICAgPHN0cmluZz5jbjwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5&#xd;
+PSJvYmpDbGFzcyI+CiAgICAgICA8c3RyaW5nPmluZXRPcmdQZXJzb248L3N0cmluZz4KICAgICAg&#xd;
+PC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0icGFzc3dkQXR0ck5hbWUiPgogICAgICAgPHN0&#xd;
+cmluZz51c2VyUGFzc3dvcmQ8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9w&#xd;
+ZXJ0eT0icGFzc3dkVHlwZSI+CiAgICAgICA8b2JqZWN0IGNsYXNzPSJjb20ubDd0ZWNoLmlkZW50&#xd;
+aXR5LmxkYXAuUGFzc3dkU3RyYXRlZ3kiLz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9w&#xd;
+ZXJ0eT0idXNlckNlcnRBdHRyTmFtZSI+CiAgICAgICA8c3RyaW5nPnVzZXJDZXJ0aWZpY2F0ZTti&#xd;
+aW5hcnk8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgIDwvb2JqZWN0PgogICAgPC92b2lkPgog&#xd;
+ICA8L29iamVjdD4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3RyaW5nPmxk&#xd;
+YXBzZWFyY2hiYXNlPC9zdHJpbmc+CiAgIDxzdHJpbmc+bz1BUElNQ0E8L3N0cmluZz4KICA8L3Zv&#xd;
+aWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3RyaW5nPmdyb3VwQ2FjaGVNYXhBZ2U8L3N0&#xd;
+cmluZz4KICAgPGxvbmc+NjAwMDA8L2xvbmc+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0&#xd;
+Ij4KICAgPHN0cmluZz5sZGFwd3JpdGViYXNlPC9zdHJpbmc+CiAgIDxzdHJpbmc+PC9zdHJpbmc+&#xd;
+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0Ij4KICAgPHN0cmluZz51c2VyTG9va3VwQnlD&#xd;
+ZXJ0TW9kZTwvc3RyaW5nPgogICA8c3RyaW5nPkxPR0lOPC9zdHJpbmc+CiAgPC92b2lkPgogIDx2&#xd;
+b2lkIG1ldGhvZD0icHV0Ij4KICAgPHN0cmluZz53cml0YWJsZTwvc3RyaW5nPgogICA8Ym9vbGVh&#xd;
+bj5mYWxzZTwvYm9vbGVhbj4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3Ry&#xd;
+aW5nPmxkYXBCaW5kRE48L3N0cmluZz4KICAgPHN0cmluZz5jbj1sZGFwYmluZCxvdT1tZ210LG89&#xd;
+QVBJTUNBPC9zdHJpbmc+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0Ij4KICAgPHN0cmlu&#xd;
+Zz5ncm91cENhY2hlU2l6ZTwvc3RyaW5nPgogICA8aW50PjEwMDwvaW50PgogIDwvdm9pZD4KICA8&#xd;
+dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+Z3JvdXBNYXhOZXN0aW5nPC9zdHJpbmc+CiAg&#xd;
+IDxpbnQ+NTwvaW50PgogIDwvdm9pZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+&#xd;
+Z3JwbWFwcGluZ3M8L3N0cmluZz4KICAgPG9iamVjdCBjbGFzcz0iamF2YS51dGlsLkhhc2hNYXAi&#xd;
+PgogICAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+Z3JvdXBvZm5hbWVzPC9zdHJp&#xd;
+bmc+CiAgICAgPG9iamVjdCBjbGFzcz0iY29tLmw3dGVjaC5pZGVudGl0eS5sZGFwLkdyb3VwTWFw&#xd;
+cGluZ0NvbmZpZyI+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJtZW1iZXJBdHRyTmFtZSI+CiAgICAg&#xd;
+ICA8c3RyaW5nPm1lbWJlcjwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3Bl&#xd;
+cnR5PSJtZW1iZXJTdHJhdGVneSI+CiAgICAgICA8b2JqZWN0IGNsYXNzPSJjb20ubDd0ZWNoLmlk&#xd;
+ZW50aXR5LmxkYXAuTWVtYmVyU3RyYXRlZ3kiLz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBw&#xd;
+cm9wZXJ0eT0ibmFtZUF0dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+Y248L3N0cmluZz4KICAgICAg&#xd;
+PC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ib2JqQ2xhc3MiPgogICAgICAgPHN0cmluZz5n&#xd;
+cm91cE9mTmFtZXM8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgIDwvb2JqZWN0PgogICAgPC92&#xd;
+b2lkPgogICA8L29iamVjdD4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3Ry&#xd;
+aW5nPm9yaWdpbmFsVGVtcGxhdGVOYW1lPC9zdHJpbmc+CiAgIDxzdHJpbmc+R2VuZXJpY0xEQVA8&#xd;
+L3N0cmluZz4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3RyaW5nPmFkbWlu&#xd;
+RW5hYmxlZDwvc3RyaW5nPgogICA8Ym9vbGVhbj50cnVlPC9ib29sZWFuPgogIDwvdm9pZD4KICA8&#xd;
+dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+Z3JvdXBDYWNoZU1heEFnZVVuaXQ8L3N0cmlu&#xd;
+Zz4KICAgPHN0cmluZz5tPC9zdHJpbmc+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0Ij4K&#xd;
+ICAgPHN0cmluZz5sZGFwdXJsPC9zdHJpbmc+CiAgIDxhcnJheSBjbGFzcz0iamF2YS5sYW5nLlN0&#xd;
+cmluZyIgbGVuZ3RoPSIxIj4KICAgIDx2b2lkIGluZGV4PSIwIj4KICAgICA8c3RyaW5nPmxkYXA6&#xd;
+Ly9pcC0xNzItMzEtMzctMjE1LnVzLXdlc3QtMi5jb21wdXRlLmludGVybmFsOjEzODk8L3N0cmlu&#xd;
+Zz4KICAgIDwvdm9pZD4KICAgPC9hcnJheT4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQi&#xd;
+PgogICA8c3RyaW5nPmNsaWVudEF1dGg8L3N0cmluZz4KICAgPGJvb2xlYW4+ZmFsc2U8L2Jvb2xl&#xd;
+YW4+CiAgPC92b2lkPgogPC9vYmplY3Q+CjwvamF2YT4K</Props>
+            <TypeVal>2</TypeVal>
+        </IDProviderReference>
+        <IDProviderReference RefType="com.l7tech.console.policy.exporter.IdProviderReference">
+            <GOID>0000000000000000fffffffffffffffe</GOID>
+            <Name>Internal Identity Provider</Name>
+            <Props>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGphdmEgdmVyc2lvbj0iMS44&#xd;
+LjBfMTQ0IiBjbGFzcz0iamF2YS5iZWFucy5YTUxEZWNvZGVyIj4KIDxvYmplY3QgY2xhc3M9Imph&#xd;
+dmEudXRpbC5IYXNoTWFwIj4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+YWRtaW5F&#xd;
+bmFibGVkPC9zdHJpbmc+CiAgIDxib29sZWFuPnRydWU8L2Jvb2xlYW4+CiAgPC92b2lkPgogPC9v&#xd;
+YmplY3Q+CjwvamF2YT4K</Props>
+            <TypeVal>1</TypeVal>
+        </IDProviderReference>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>MAG Generate OTP</Name>
+            <Guid>4b406288-f7cf-4683-bd65-0a5a6c20a14d</Guid>
+        </EncapsulatedAssertionReference>
+        <EncapsulatedAssertionReference RefType="com.l7tech.console.policy.exporter.EncapsulatedAssertionReference">
+            <Name>MAG Send SMS - Twilio Service</Name>
+            <Guid>7ce55dee-793b-4e29-8577-585d42c7c49b</Guid>
+        </EncapsulatedAssertionReference>
+    </exp:References>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <wsp:All wsp:Usage="Required">
+                <L7p:AuditAssertion>
+                    <L7p:SaveRequest booleanValue="true"/>
+                    <L7p:SaveResponse booleanValue="true"/>
+                </L7p:AuditAssertion>
+                <L7p:Regex>
+                    <L7p:AutoTarget booleanValue="false"/>
+                    <L7p:CaptureVar stringValue="resource"/>
+                    <L7p:IncludeEntireExpressionCapture booleanValue="false"/>
+                    <L7p:OtherTargetMessageVariable stringValue="request.url.path"/>
+                    <L7p:Regex stringValue="/alexa/(.*)"/>
+                    <L7p:RegexName stringValue="Extract Resource from Path"/>
+                    <L7p:Replacement stringValue=""/>
+                    <L7p:Target target="OTHER"/>
+                </L7p:Regex>
+                <L7p:AuditDetailAssertion>
+                    <L7p:Detail stringValueReference="inline"><![CDATA[headers: ${request.http.allheadervalues}
+resource: ${resource}]]></L7p:Detail>
+                    <L7p:Level stringValue="WARNING"/>
+                </L7p:AuditDetailAssertion>
+                <L7p:Encapsulated>
+                    <L7p:EncapsulatedAssertionConfigGuid stringValue="ae2e93d4-1acf-4931-b01a-8f52407756d6"/>
+                    <L7p:EncapsulatedAssertionConfigName stringValue="MAG OTP Configuration"/>
+                </L7p:Encapsulated>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="AUDIT DETAILS //"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:All>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${resource}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="FIRST"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="helloGateway"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="SGVsbG8gTi4gUi4gRy4gUmVsaWFudCwgdGhpcyBpcyB0aGUgQ0EgQVBJIEdhdGV3YXkhIFlvdXIgY29ubmVjdGlvbiBpcyBlc3RhYmxpc2hlZCBhbmQgdmFsaWQuIFBsZWFzZSBzYXk6IE9UUCBTZXJ2aWNlIHRvIGdlbmVyYXRlIGEgbmV3IFBJTg=="/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="NoAuth //"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${resource}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="FIRST"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="addToken"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:CustomizeErrorResponse>
+                        <L7p:ExtraHeaders nameValuePairArray="included"/>
+                        <L7p:HttpStatus stringValue="403"/>
+                    </L7p:CustomizeErrorResponse>
+                    <L7p:Encapsulated>
+                        <L7p:EncapsulatedAssertionConfigGuid stringValue="393bcb93-82ad-4b55-8333-1119f607a560"/>
+                        <L7p:EncapsulatedAssertionConfigName stringValue="OTK Require OAuth 2.0 Token"/>
+                        <L7p:Parameters mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="cache_lifetime"/>
+                                <L7p:value stringValue="5"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="given_access_token"/>
+                                <L7p:value stringValue=""/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="onetime"/>
+                                <L7p:value stringValue="false"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="scope_fail"/>
+                                <L7p:value stringValue="false"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="scope_required"/>
+                                <L7p:value stringValue=""/>
+                            </L7p:entry>
+                        </L7p:Parameters>
+                    </L7p:Encapsulated>
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="JHtzZXNzaW9uLnN1YnNjcmliZXJfaWR9"/>
+                        <L7p:VariableToSet stringValue="username"/>
+                    </L7p:SetVariable>
+                    <L7p:LookupDynamicContextVariables>
+                        <L7p:SourceVariable stringValue="username"/>
+                        <L7p:TargetDataType variableDataType="string"/>
+                    </L7p:LookupDynamicContextVariables>
+                    <L7p:SetVariable>
+                        <L7p:Base64Expression stringValue="JHtzZWNwYXNzLmFsZXhhdXNlci5wbGFpbnRleHR9"/>
+                        <L7p:VariableToSet stringValue="password"/>
+                    </L7p:SetVariable>
+                    <L7p:XpathCredentialSource>
+                        <L7p:Enabled booleanValue="false"/>
+                        <L7p:PasswordExpression xpathExpressionValue="included">
+                            <L7p:Expression stringValue="$password"/>
+                            <L7p:Namespaces mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="s"/>
+                                    <L7p:value stringValue="http://schemas.xmlsoap.org/soap/envelope/"/>
+                                </L7p:entry>
+                            </L7p:Namespaces>
+                        </L7p:PasswordExpression>
+                        <L7p:XpathExpression xpathExpressionValue="included">
+                            <L7p:Expression stringValue="$username"/>
+                            <L7p:Namespaces mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="s"/>
+                                    <L7p:value stringValue="http://schemas.xmlsoap.org/soap/envelope/"/>
+                                </L7p:entry>
+                            </L7p:Namespaces>
+                        </L7p:XpathExpression>
+                    </L7p:XpathCredentialSource>
+                    <L7p:AuditDetailAssertion>
+                        <L7p:Detail stringValueReference="inline"><![CDATA[session.client_id: ${session.client_id}
+session.subscriber_id: ${session.subscriber_id}
+password: ${password}
+username: ${username}]]></L7p:Detail>
+                        <L7p:Level stringValue="WARNING"/>
+                    </L7p:AuditDetailAssertion>
+                    <L7p:CustomizeErrorResponse>
+                        <L7p:ExtraHeaders nameValuePairArray="included"/>
+                        <L7p:HttpStatus stringValue="401"/>
+                    </L7p:CustomizeErrorResponse>
+                    <L7p:MemberOfGroup>
+                        <L7p:Enabled booleanValue="false"/>
+                        <L7p:GroupId stringValue="cn=alexa,ou=groups,o=APIMCA"/>
+                        <L7p:GroupName stringValue="alexa"/>
+                        <L7p:IdentityProviderOid goidValue="8614e4a604a90f4f96796ec340bd294b"/>
+                    </L7p:MemberOfGroup>
+                    <L7p:LDAPQuery>
+                        <L7p:AllowMultipleResults booleanValue="true"/>
+                        <L7p:AttrNames stringArrayValue="included">
+                            <L7p:item stringValue="cn"/>
+                        </L7p:AttrNames>
+                        <L7p:CacheSize intValue="100"/>
+                        <L7p:EnableCache booleanValue="false"/>
+                        <L7p:FailIfNoResults booleanValue="true"/>
+                        <L7p:IncludeEmptyAttributes booleanValue="true"/>
+                        <L7p:LdapProviderOid goidValue="8614e4a604a90f4f96796ec340bd294b"/>
+                        <L7p:MaximumResults intValue="1"/>
+                        <L7p:QueryMappings queryAttributeMappings="included">
+                            <L7p:item mapping="included">
+                                <L7p:AttributeName stringValue="cn"/>
+                                <L7p:JoinMultivalued booleanValue="false"/>
+                                <L7p:MatchingContextVariableName stringValue="cn"/>
+                            </L7p:item>
+                        </L7p:QueryMappings>
+                        <L7p:SearchFilter stringValue="(&amp;(cn=alexa)(member=cn=${username},ou=people,o=APIMCA))"/>
+                        <L7p:SearchFilterInjectionProtected booleanValue="true"/>
+                    </L7p:LDAPQuery>
+                    <L7p:SpecificUser>
+                        <L7p:Enabled booleanValue="false"/>
+                        <L7p:IdentityProviderOid goidValue="0000000000000000fffffffffffffffe"/>
+                        <L7p:UserLogin stringValue="alexauser"/>
+                        <L7p:UserName stringValue="alexauser"/>
+                        <L7p:UserUid stringValue="38d2342a1fdc2a15dda04391d868df49"/>
+                    </L7p:SpecificUser>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="Ty4gYXV0aCB0b2tlbiBpcyB2YWxpZC4gICR7dXNlcm5hbWV9IGlzIGZvdW5kIGluIHRoZSBBbGV4YSBHcm91cCAoJHtjbn0pLg=="/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="OAuth Validation //"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${resource}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="FIRST"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="sendPIN"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <wsp:All wsp:Usage="Required">
+                        <L7p:Encapsulated>
+                            <L7p:EncapsulatedAssertionConfigGuid stringValue="393bcb93-82ad-4b55-8333-1119f607a560"/>
+                            <L7p:EncapsulatedAssertionConfigName stringValue="OTK Require OAuth 2.0 Token"/>
+                            <L7p:Parameters mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="cache_lifetime"/>
+                                    <L7p:value stringValue="5"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="given_access_token"/>
+                                    <L7p:value stringValue=""/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="onetime"/>
+                                    <L7p:value stringValue="false"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="scope_fail"/>
+                                    <L7p:value stringValue="false"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="scope_required"/>
+                                    <L7p:value stringValue=""/>
+                                </L7p:entry>
+                            </L7p:Parameters>
+                        </L7p:Encapsulated>
+                        <L7p:LDAPQuery>
+                            <L7p:AllowMultipleResults booleanValue="true"/>
+                            <L7p:AttrNames stringArrayValue="included">
+                                <L7p:item stringValue="mobile"/>
+                            </L7p:AttrNames>
+                            <L7p:CacheSize intValue="100"/>
+                            <L7p:FailIfNoResults booleanValue="true"/>
+                            <L7p:IncludeEmptyAttributes booleanValue="true"/>
+                            <L7p:LdapProviderOid goidValue="8614e4a604a90f4f96796ec340bd294b"/>
+                            <L7p:MaximumResults intValue="1"/>
+                            <L7p:QueryMappings queryAttributeMappings="included">
+                                <L7p:item mapping="included">
+                                    <L7p:AttributeName stringValue="mobile"/>
+                                    <L7p:JoinMultivalued booleanValue="false"/>
+                                    <L7p:MatchingContextVariableName stringValue="mobile"/>
+                                </L7p:item>
+                            </L7p:QueryMappings>
+                            <L7p:SearchFilter stringValue="(cn=${session.subscriber_id})"/>
+                            <L7p:SearchFilterInjectionProtected booleanValue="true"/>
+                        </L7p:LDAPQuery>
+                        <L7p:SetVariable>
+                            <L7p:Base64Expression stringValue="JHttb2JpbGV9"/>
+                            <L7p:VariableToSet stringValue="mobile"/>
+                        </L7p:SetVariable>
+                        <L7p:Encapsulated>
+                            <L7p:EncapsulatedAssertionConfigGuid stringValue="4b406288-f7cf-4683-bd65-0a5a6c20a14d"/>
+                            <L7p:EncapsulatedAssertionConfigName stringValue="MAG Generate OTP"/>
+                            <L7p:Parameters mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="otp_length"/>
+                                    <L7p:value stringValue="4"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="otp_type"/>
+                                    <L7p:value stringValue="numerical"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="userid"/>
+                                    <L7p:value stringValue="alexa"/>
+                                </L7p:entry>
+                            </L7p:Parameters>
+                        </L7p:Encapsulated>
+                        <L7p:Encapsulated>
+                            <L7p:EncapsulatedAssertionConfigGuid stringValue="7ce55dee-793b-4e29-8577-585d42c7c49b"/>
+                            <L7p:EncapsulatedAssertionConfigName stringValue="MAG Send SMS - Twilio Service"/>
+                            <L7p:Parameters mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="mobile"/>
+                                    <L7p:value stringValue="${mobile}"/>
+                                </L7p:entry>
+                                <L7p:entry>
+                                    <L7p:key stringValue="smsText"/>
+                                    <L7p:value stringValue="Hello fro Alexa. Please use this PIN to proceed: ${otp}"/>
+                                </L7p:entry>
+                            </L7p:Parameters>
+                        </L7p:Encapsulated>
+                        <L7p:assertionComment>
+                            <L7p:Properties mapValue="included">
+                                <L7p:entry>
+                                    <L7p:key stringValue="LEFT.COMMENT"/>
+                                    <L7p:value stringValue="Twillio Option//"/>
+                                </L7p:entry>
+                            </L7p:Properties>
+                        </L7p:assertionComment>
+                    </wsp:All>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="UGluIHNlbnQuICBwbGVhc2Ugc2F5OiBwaW4gbnVtYmVyOiB0aGVuIHNheSB0aGUgcGlu"/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="Send PIN //"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${resource}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="FIRST"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="pinAction"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="ewoJImFjY05vIjoiJHtyZXF1ZXN0Lmh0dHAucGFyYW1ldGVyLnBpbn0iLAogCSJzcGVlY2hPdXRwdXQiOiJBY2NlcHRlZC4gIFBsZWFzZSBzYXk6IHJlcXVlc3Qgd2l0aCB0b2tlbiIKCn0="/>
+                        <L7p:ResponseContentType stringValue="application/json; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="Validate PIN //"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${resource}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="FIRST"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="secureService"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:CustomizeErrorResponse>
+                        <L7p:ExtraHeaders nameValuePairArray="included"/>
+                        <L7p:HttpStatus stringValue="403"/>
+                    </L7p:CustomizeErrorResponse>
+                    <L7p:Encapsulated>
+                        <L7p:EncapsulatedAssertionConfigGuid stringValue="393bcb93-82ad-4b55-8333-1119f607a560"/>
+                        <L7p:EncapsulatedAssertionConfigName stringValue="OTK Require OAuth 2.0 Token"/>
+                        <L7p:Parameters mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="cache_lifetime"/>
+                                <L7p:value stringValue="5"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="given_access_token"/>
+                                <L7p:value stringValue=""/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="onetime"/>
+                                <L7p:value stringValue="false"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="scope_fail"/>
+                                <L7p:value stringValue="false"/>
+                            </L7p:entry>
+                            <L7p:entry>
+                                <L7p:key stringValue="scope_required"/>
+                                <L7p:value stringValue="OOB"/>
+                            </L7p:entry>
+                        </L7p:Parameters>
+                    </L7p:Encapsulated>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="SGVyZSBpcyB0aGUgc3VwZXIgc2VjcmV0IHJlc291cmNlLiAgVmFsaWRhdGVkIHdpdGggQ0EuIE8uIGF1dGggYW5kIGFsc28gUElOIG11bHRpIGZhY3Rvci4="/>
+                        <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+                    </L7p:HardcodedResponse>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="OTP Service //"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="Resources //"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:OneOrMore>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>
